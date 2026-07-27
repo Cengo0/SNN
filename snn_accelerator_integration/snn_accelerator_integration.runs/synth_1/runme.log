@@ -1,0 +1,517 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Jul 21 16:16:33 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/chipwisperer/Documents/SNN/Event-Driven-Spiking-Neural-Network-Accelerator-for-FPGA/hardware/ip_repo/snn_top_hls_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/chipwisperer/AMD/2025.2/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3144403
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2286.980 ; gain = 480.875 ; free physical = 14627 ; free virtual = 56023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:358]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:358]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:358]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 40 connections declared, but only 37 given [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:358]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_1_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_dma_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_1_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_dma_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'design_1_axi_dma_1_0' has 64 connections declared, but only 59 given [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:396]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_2_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_dma_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_2_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_dma_2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_2_0' is unconnected for instance 'axi_dma_2' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:456]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_2_0' is unconnected for instance 'axi_dma_2' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:456]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_2_0' is unconnected for instance 'axi_dma_2' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:456]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_2_0' is unconnected for instance 'axi_dma_2' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:456]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_2_0' is unconnected for instance 'axi_dma_2' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:456]
+WARNING: [Synth 8-7023] instance 'axi_dma_2' of module 'design_1_axi_dma_2_0' has 64 connections declared, but only 59 given [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:456]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1089]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:2848]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:2848]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_3HM21E' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3089]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_3HM21E' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3089]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3330]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3330]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3511]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3511]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_8NCF02' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3746]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_1' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_1' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_1' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_1' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_8NCF02' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3746]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1UQ1PUB' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3927]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_2' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_2' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_2' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_2' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1UQ1PUB' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:3927]
+INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_4T8GAF' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:4141]
+INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_4T8GAF' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:4141]
+INFO: [Synth 8-6157] synthesizing module 's05_couplers_imp_1YHCGIE' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:4376]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_3' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_3' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_3' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_3' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's05_couplers_imp_1YHCGIE' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:4376]
+INFO: [Synth 8-6157] synthesizing module 's06_couplers_imp_5OWWZ8' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:4557]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_4' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_4' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_4' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_4' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_auto_us_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's06_couplers_imp_5OWWZ8' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:4557]
+INFO: [Synth 8-6157] synthesizing module 's07_couplers_imp_1XVBQ51' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:4771]
+INFO: [Synth 8-6155] done synthesizing module 's07_couplers_imp_1XVBQ51' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:4771]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_mem_intercon_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1089]
+WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_arready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_awready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_bid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_bresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_bvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_rdata' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_rid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_rlast' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_rresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_rvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S04_AXI_wready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_arready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_awready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_bid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_bresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_bvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_rdata' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_rid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_rlast' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_rresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_rvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7071] port 'S07_AXI_wready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+WARNING: [Synth 8-7023] instance 'axi_mem_intercon' of module 'design_1_axi_mem_intercon_0' has 280 connections declared, but only 247 given [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:516]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 116 connections declared, but only 105 given [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:764]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 155 connections declared, but only 145 given [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:870]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1016]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1016]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1016]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1016]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1016]
+INFO: [Synth 8-6157] synthesizing module 'design_1_snn_top_hls_0_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_snn_top_hls_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_snn_top_hls_0_0' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/.Xil/Vivado-3144165-Mariana/realtime/design_1_snn_top_hls_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'm_axis_spikes_TDEST' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'm_axis_spikes_TID' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'm_axis_spikes_TSTRB' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'm_axis_spikes_TUSER' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'm_axis_weights_TDEST' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'm_axis_weights_TID' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'm_axis_weights_TSTRB' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'm_axis_weights_TUSER' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'spike_in_valid' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'spike_in_neuron_id' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'spike_in_weight' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'spike_out_ready' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_valid' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_group' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_src' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_dst' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_data' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_exc' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_is_inter' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_dst_group' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'learn_weight_fanout_idx' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'snn_enable' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'snn_reset' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'threshold_out' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7071] port 'leak_rate_out' of module 'design_1_snn_top_hls_0_0' is unconnected for instance 'snn_top_hls_0' [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+WARNING: [Synth 8-7023] instance 'snn_top_hls_0' of module 'design_1_snn_top_hls_0_0' has 89 connections declared, but only 63 given [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:1023]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s07_couplers_imp_1XVBQ51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s07_couplers_imp_1XVBQ51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s07_couplers_imp_1XVBQ51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s07_couplers_imp_1XVBQ51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s06_couplers_imp_5OWWZ8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s06_couplers_imp_5OWWZ8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s05_couplers_imp_1YHCGIE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s05_couplers_imp_1YHCGIE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s04_couplers_imp_4T8GAF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s04_couplers_imp_4T8GAF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s04_couplers_imp_4T8GAF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s04_couplers_imp_4T8GAF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s03_couplers_imp_1UQ1PUB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s03_couplers_imp_1UQ1PUB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s02_couplers_imp_8NCF02 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s02_couplers_imp_8NCF02 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_1W60HW0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_1W60HW0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s01_couplers_imp_1W60HW0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s01_couplers_imp_1W60HW0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_7HNO1D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_7HNO1D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_3HM21E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_3HM21E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_3HM21E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_3HM21E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S04_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S04_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S05_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S05_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S06_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S06_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S07_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S07_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2391.949 ; gain = 585.844 ; free physical = 14529 ; free virtual = 55927
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2394.918 ; gain = 588.812 ; free physical = 14529 ; free virtual = 55927
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2394.918 ; gain = 588.812 ; free physical = 14529 ; free virtual = 55927
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2394.918 ; gain = 0.000 ; free physical = 14537 ; free virtual = 55935
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_snn_top_hls_0_0/design_1_snn_top_hls_0_0/design_1_snn_top_hls_0_0_in_context.xdc] for cell 'design_1_i/snn_top_hls_0'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_snn_top_hls_0_0/design_1_snn_top_hls_0_0/design_1_snn_top_hls_0_0_in_context.xdc] for cell 'design_1_i/snn_top_hls_0'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_pc'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_pc'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_2/design_1_axi_mem_intercon_imp_auto_pc_2/design_1_axi_mem_intercon_imp_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_pc'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_2/design_1_axi_mem_intercon_imp_auto_pc_2/design_1_axi_mem_intercon_imp_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_pc'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_3/design_1_axi_mem_intercon_imp_auto_pc_3/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s05_couplers/auto_pc'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_3/design_1_axi_mem_intercon_imp_auto_pc_3/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s05_couplers/auto_pc'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s05_couplers/auto_us'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_3/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s05_couplers/auto_us'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_4/design_1_axi_mem_intercon_imp_auto_pc_4/design_1_axi_mem_intercon_imp_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s06_couplers/auto_pc'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_4/design_1_axi_mem_intercon_imp_auto_pc_4/design_1_axi_mem_intercon_imp_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s06_couplers/auto_pc'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_4/design_1_axi_mem_intercon_imp_auto_us_4/design_1_axi_mem_intercon_imp_auto_us_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s06_couplers/auto_us'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_4/design_1_axi_mem_intercon_imp_auto_us_4/design_1_axi_mem_intercon_imp_auto_us_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s06_couplers/auto_us'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_0/design_1_axi_dma_1_0/design_1_axi_dma_1_0_in_context.xdc] for cell 'design_1_i/axi_dma_1'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_0/design_1_axi_dma_1_0/design_1_axi_dma_1_0_in_context.xdc] for cell 'design_1_i/axi_dma_1'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_dma_2_0/design_1_axi_dma_2_0/design_1_axi_dma_1_0_in_context.xdc] for cell 'design_1_i/axi_dma_2'
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_axi_dma_2_0/design_1_axi_dma_2_0/design_1_axi_dma_1_0_in_context.xdc] for cell 'design_1_i/axi_dma_2'
+Parsing XDC File [/home/chipwisperer/Documents/SNN/Event-Driven-Spiking-Neural-Network-Accelerator-for-FPGA/hardware/constraints/pynq_z2_pins.xdc]
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/Event-Driven-Spiking-Neural-Network-Accelerator-for-FPGA/hardware/constraints/pynq_z2_pins.xdc]
+Parsing XDC File [/home/chipwisperer/Documents/SNN/Event-Driven-Spiking-Neural-Network-Accelerator-for-FPGA/hardware/constraints/pynq_z2_v1.0.xdc]
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/Event-Driven-Spiking-Neural-Network-Accelerator-for-FPGA/hardware/constraints/pynq_z2_v1.0.xdc]
+Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2442.570 ; gain = 0.000 ; free physical = 14553 ; free virtual = 55951
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2442.605 ; gain = 0.000 ; free physical = 14553 ; free virtual = 55951
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2442.605 ; gain = 636.500 ; free physical = 14600 ; free virtual = 55998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2450.574 ; gain = 644.469 ; free physical = 14600 ; free virtual = 55998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2450.574 ; gain = 644.469 ; free physical = 14599 ; free virtual = 55997
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2450.574 ; gain = 644.469 ; free physical = 14598 ; free virtual = 55997
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[5] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[4] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[3] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[5] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[4] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[3] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_AXI_bid[5] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_AXI_bid[4] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_AXI_bid[3] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_AXI_rid[5] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_AXI_rid[4] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_AXI_rid[3] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S04_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S04_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S05_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S05_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S06_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S06_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S07_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S07_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2450.574 ; gain = 644.469 ; free physical = 14605 ; free virtual = 56010
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2551.574 ; gain = 745.469 ; free physical = 14526 ; free virtual = 55931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2553.574 ; gain = 747.469 ; free physical = 14526 ; free virtual = 55931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2563.582 ; gain = 757.477 ; free physical = 14518 ; free virtual = 55923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2749.395 ; gain = 943.289 ; free physical = 14357 ; free virtual = 55762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2749.395 ; gain = 943.289 ; free physical = 14357 ; free virtual = 55762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2749.395 ; gain = 943.289 ; free physical = 14357 ; free virtual = 55762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2749.395 ; gain = 943.289 ; free physical = 14357 ; free virtual = 55762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2749.395 ; gain = 943.289 ; free physical = 14357 ; free virtual = 55762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2749.395 ; gain = 943.289 ; free physical = 14357 ; free virtual = 55762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------------+----------+
+|      |BlackBox name                           |Instances |
++------+----------------------------------------+----------+
+|1     |design_1_axi_dma_0_0                    |         1|
+|2     |design_1_axi_dma_1_0                    |         1|
+|3     |design_1_axi_dma_2_0                    |         1|
+|4     |design_1_axi_mem_intercon_imp_xbar_0    |         1|
+|5     |design_1_axi_mem_intercon_imp_auto_pc_0 |         1|
+|6     |design_1_axi_mem_intercon_imp_auto_us_0 |         1|
+|7     |design_1_axi_mem_intercon_imp_auto_pc_1 |         1|
+|8     |design_1_axi_mem_intercon_imp_auto_us_1 |         1|
+|9     |design_1_axi_mem_intercon_imp_auto_pc_2 |         1|
+|10    |design_1_axi_mem_intercon_imp_auto_us_2 |         1|
+|11    |design_1_axi_mem_intercon_imp_auto_pc_3 |         1|
+|12    |design_1_axi_mem_intercon_imp_auto_us_3 |         1|
+|13    |design_1_axi_mem_intercon_imp_auto_pc_4 |         1|
+|14    |design_1_axi_mem_intercon_imp_auto_us_4 |         1|
+|15    |design_1_axi_smc_0                      |         1|
+|16    |design_1_processing_system7_0_0         |         1|
+|17    |design_1_rst_ps7_0_100M_0               |         1|
+|18    |design_1_snn_top_hls_0_0                |         1|
++------+----------------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |design_1_axi_dma_0                    |     1|
+|2     |design_1_axi_dma_1                    |     1|
+|3     |design_1_axi_dma_2                    |     1|
+|4     |design_1_axi_mem_intercon_imp_auto_pc |     5|
+|9     |design_1_axi_mem_intercon_imp_auto_us |     5|
+|14    |design_1_axi_mem_intercon_imp_xbar    |     1|
+|15    |design_1_axi_smc                      |     1|
+|16    |design_1_processing_system7_0         |     1|
+|17    |design_1_rst_ps7_0_100M               |     1|
+|18    |design_1_snn_top_hls_0                |     1|
++------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2749.395 ; gain = 943.289 ; free physical = 14357 ; free virtual = 55762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2749.395 ; gain = 895.602 ; free physical = 14357 ; free virtual = 55762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2749.402 ; gain = 943.289 ; free physical = 14357 ; free virtual = 55762
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2749.402 ; gain = 0.000 ; free physical = 14528 ; free virtual = 55933
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2749.402 ; gain = 0.000 ; free physical = 14521 ; free virtual = 55926
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 68bfbedf
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 187 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:43 . Memory (MB): peak = 2749.430 ; gain = 1128.027 ; free physical = 14517 ; free virtual = 55922
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2011.410; main = 1881.583; forked = 281.696
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3627.582; main = 2749.398; forked = 993.996
+INFO: [Common 17-1381] The checkpoint '/home/chipwisperer/Documents/SNN/snn_accelerator_integration/snn_accelerator_integration.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 21 16:17:28 2026...
