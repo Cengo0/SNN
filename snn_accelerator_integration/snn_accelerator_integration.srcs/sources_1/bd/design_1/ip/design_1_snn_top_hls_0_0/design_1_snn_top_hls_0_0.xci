@@ -4,7 +4,7 @@
     "xci_name": "design_1_snn_top_hls_0_0",
     "cell_name": "snn_top_hls_0",
     "component_reference": "xilinx.com:hls:snn_top_hls:1.0",
-    "ip_revision": "2114700811",
+    "ip_revision": "2114715166",
     "gen_directory": "../../../../../../snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_snn_top_hls_0_0",
     "parameters": {
       "component_parameters": {
@@ -34,7 +34,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114700811" } ],
+        "IPREVISION": [ { "value": "2114715166" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../snn_accelerator_integration.gen/sources_1/bd/design_1/ip/design_1_snn_top_hls_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -1196,5 +1196,5 @@
       }
     }
   },
-  "checksum": "ccb3ec4e"
+  "checksum": "881d0630"
 }
